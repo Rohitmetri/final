@@ -1,0 +1,175 @@
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+  background-color: #8a2be2; /* Fully purple background */
+  border: none;
+  color: #ffffff; /* White icon */
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px; /* Add padding for better click area */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 20px; /* Space between toggle button and logo */
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+  background-color: #7b1fa2; /* Darker purple on hover */
+}
+
+/* Logo Styles */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8a2be2; /* Purple */
+  transition: color 0.3s ease;
+  margin-left: 20px; /* Space between toggle button and logo */
+}
+
+.logo:hover {
+  color: #7b1fa2; /* Darker purple */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(138, 43, 226, 0.5); /* Purple glow */
+  border-right: 2px solid #8a2be2; /* Purple border */
+  overflow: hidden; /* Hide overflow for the entire sidebar */
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.95); /* Darker background for header */
+  border-bottom: 2px solid #8a2be2; /* Purple border */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #8a2be2; /* Purple */
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #8a2be2; /* Purple on hover */
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: calc(100vh - 60px); /* Full height minus header height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.sidebar-menu li {
+  border-bottom: 1px solid rgba(138, 43, 226, 0.3); /* Subtle purple border */
+}
+
+.sidebar-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  perspective: 1000px; /* Enable 3D perspective */
+}
+
+.sidebar-menu li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   /* Purple for animation */
+  transform: rotateX(90deg) translateZ(-25px);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+  opacity: 0;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #8a2be2; /* Purple on hover */
+  color: #ffffff;
+  transform: translateZ(25px);
+}
+
+.sidebar-menu li a:hover::before {
+  transform: rotateX(0deg) translateZ(0);
+  opacity: 1;
+}
+
+/* Main Topic */
+.main-topic {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #8a2be2; /* Purple */
+}
+
+/* Subtopic Dropdown */
+.subtopics {
+  list-style: none;
+  padding-left: 20px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background for subtopics */
+  border-left: 2px solid #8a2be2; /* Purple border */
+}
+
+.subtopics.active {
+  display: block;
+}
+
+.subtopics li a {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  color: yellow;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subtopics li a:hover {
+  background-color: rgba(138, 43, 226, 0.2); /* Subtle purple hover */
+  color: #ffffff;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  transition: margin-left 0.3s ease;
+}
+
+.content-wrapper.shifted {
+  margin-left: 250px;
+}
+
+/* Prevent body scrolling when sidebar is active */
+body.sidebar-active {
+  overflow: hidden; /* Disable scrolling on the body */
+}

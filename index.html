@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker Theme Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sidebar.css"> 
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-background">
+    <video autoplay muted loop>
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-hacker-typing-on-computer-while-looking-at-streams-of-data-34685-large.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Logo -->
+    <div class="logo">Blogbook</div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h3>Topics</h3>
+        <button class="close-btn">&times;</button>
+      </div>
+      <ul class="sidebar-menu">
+        <!-- Main Topics -->
+        <li>
+          <a href="#" class="main-topic"> Artificial Intelligence (AI)</a>
+          <ul class="subtopics">
+            <li><a href="#"> Machine Learning</a></li>
+            <li><a href="#"> Natural Language Processing (NLP)</a></li>
+            <li><a href="#">Computer Vision</a></li>
+            <li><a href="#">AI in Robotics</a></li>
+            <li><a href="#">AI Ethics & Bias</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="main-topic"> Cybersecurity</a>
+          <ul class="subtopics">
+            <li><a href="#">Network Security</a></li>
+            <li><a href="#">Ethical Hacking</a></li>
+            <li><a href="#">Cryptography</a></li>
+            <li><a href="#"> Cloud Security</a></li>
+            <li><a href="#">Cyber Threat Intelligence</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="main-topic">  Blockchain Technology</a>
+          <ul class="subtopics">
+            <li><a href="#">Cryptocurrency</a></li>
+            <li><a href="#"> Blockchain Security</a></li>
+            <li><a href="#">Enterprise Blockchain</a></li>
+            <li><a href="#"> Web3 & Decentralized Applications (DApps)</a></li>
+            <li><a href="#">Future of Blockchain</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="main-topic">   Internet of Things (IoT)</a>
+          <ul class="subtopics">
+            <li><a href="#">Smart Home Automation</a></li>
+            <li><a href="#"> Industrial IoT (IIoT)</a></li>
+            <li><a href="#">Wearable Technology</a></li>
+            <li><a href="#"> IoT in Healthcare</a></li>
+            <li><a href="#"> IoT Security Challenges</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="main-topic">   Cloud Computing</a>
+          <ul class="subtopics">
+            <li><a href="#">Cloud Service Models</a></li>
+            <li><a href="#"> Cloud Deployment Models</a></li>
+            <li><a href="#">Cloud Security</a></li>
+            <li><a href="#">  Cloud Virtualization & Containers</a></li>
+            <li><a href="#">  Cloud AI & Big Data</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="main-topic"> Quantum Computing</a>
+          <ul class="subtopics">
+            <li><a href="#">Fundamentals of Quantum Computing</a></li>
+            <li><a href="#"> Quantum Cryptography</a></li>
+            <li><a href="#">Quantum Computing in AI</a></li>
+            <li><a href="#">   Quantum Hardware & Processors</a></li>
+            <li><a href="#">  Quantum Applications & Future Trends</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="main-topic">Augmented Reality (AR) & Virtual Reality (VR)</a>
+          <ul class="subtopics">
+            <li><a href="#">AR & VR Technologies</a></li>
+            <li><a href="#"> AR in Everyday Life</a></li>
+            <li><a href="#">VR in Entertainment & Gaming</a></li>
+            <li><a href="#"> AR & VR in Healthcare</a></li>
+            <li><a href="#">  Future of AR & VR</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="main-topic">Big Data & Analytics</a>
+          <ul class="subtopics">
+            <li><a href="#">Big Data Fundamentals</a></li>
+            <li><a href="#">Data Analytics Techniques</a></li>
+            <li><a href="#"> Big Data Tools & Frameworks</a></li>
+            <li><a href="#"> Big Data in Business & Marketing</a></li>
+            <li><a href="#">  Ethics & Security in Big Data</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="main-topic">5G Technology</a>
+          <ul class="subtopics">
+            <li><a href="#">5G vs Previous Generations</a></li>
+            <li><a href="#">5G Infrastructure</a></li>
+            <li><a href="#">5G in IoT & Smart Cities</a></li>
+            <li><a href="#">5G Security & Privacy</a></li>
+            <li><a href="#"> Future of 5G & Beyond</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#" class="main-topic">Software Development</a>
+          <ul class="subtopics">
+            <li><a href="#">Programming Languages</a></li>
+            <li><a href="#"> Software Development Methodologies</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Mobile App Development</a></li>
+            <li><a href="#">  Software Security & Testing</a></li>
+          </ul>
+        </li>
+        <!-- Add 8 more main topics with subtopics similarly -->
+      </ul>
+    </div>
+
+    <!-- Nav Links -->
+    <ul class="nav-links">
+      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+    </ul>
+
+    <!-- Nav Buttons -->
+    <div class="nav-buttons">
+      <a href="#profile" class="btn-profile" title="Profile"><i class="fas fa-user"></i></a>
+    </div>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <div class="content-wrapper">
+    <!-- Main Content -->
+    <div class="content">
+      <h1>Welcome to Blogbook</h1>
+      <p>Explore the latest in technology, cybersecurity, and innovation.</p>
+    </div>
+
+    <!-- Blog Sections -->
+    <!-- Your existing blog sections here -->
+     <!-- Blog Sections -->
+  <section id="tech-trends" class="blog-section">
+    <div class="blog-content">
+      <h2>Artificial Intelligence (AI)</h2>
+      <p>Artificial Intelligence (AI) is the simulation of human intelligence in machines to perform tasks like learning, problem-solving, and decision-making.</p>
+      
+    </div>
+    <div class="blog-image">
+      <a href="ai.html"><img src="images/Artificial Intelligence (AI).jpg" alt="Tech Trends 2025"></a>
+    </div>
+  </section>
+  <section id="tech-trends" class="blog-section">
+    <div class="blog-content">
+      <h2>Cybersecurity</h2>
+      <p>Cybersecurity is the practice of protecting systems, networks, and data from cyber threats and unauthorized access.</p>
+      
+    </div>
+    <div class="blog-image">
+      <a href="cybersecurity.html"><img src="images/cybersecurity.jpg" alt="Tech Trends 2025"></a>
+    </div>
+  </section>
+
+  <section id="tech-trends" class="blog-section">
+    <div class="blog-content">
+      <h2> Blockchain Technology</h2>
+      <p>Blockchain technology is a decentralized, distributed ledger system that securely records transactions across multiple computers, ensuring transparency and immutability.</p>
+      
+    </div>
+    <div class="blog-image">
+      <a href="Blockchain Technology.html"><img src="images/blockchain.jpeg" alt="Tech Trends 2025"></a>
+    </div>
+  </section>
+  <section id="tech-trends" class="blog-section">
+    <div class="blog-content">
+      <h2> Internet of Things (IoT)</h2>
+      <p>Internet of Things (IoT) refers to a network of interconnected devices that communicate and exchange data over the internet without human intervention.</p>
+      
+    </div>
+    <div class="blog-image">
+      <a href="IoT.html"><img src="images/Internet of Things (IoT).jpg" alt="Tech Trends 2025"></a>
+    </div>
+  </section>
+  <section id="tech-trends" class="blog-section">
+    <div class="blog-content">
+      <h2> Cloud Computing</h2>
+      <p>Cloud computing is the delivery of computing services like storage, servers, databases, and software over the internet on a pay-as-you-go basis.</p>
+      
+    </div>
+    <div class="blog-image">
+      <a href="Cloud Computing.html"><img src="images/Cloud Computing.webp" alt="Tech Trends 2025"></a>
+    </div>
+  </section>
+  <section id="tech-trends" class="blog-section">
+    <div class="blog-content">
+      <h2> Quantum Computing</h2>
+      <p>Quantum computing is an advanced computing technology that uses quantum bits (qubits) to perform complex calculations at exponentially faster speeds than classical computers.</p>
+      
+    </div>
+    <div class="blog-image">
+      <a href="Quantum Computing.html"><img src="images/Quantum Computing.jpg" alt="Tech Trends 2025"></a>
+    </div>
+  </section>
+  <section id="tech-trends" class="blog-section">
+    <div class="blog-content">
+      <h2>  Augmented Reality (AR) & Virtual Reality (VR)</h2>
+      <p>Augmented Reality (AR) enhances the real world by overlaying digital elements, while Virtual Reality (VR) creates a fully immersive, computer-generated environment.</p>
+      
+    </div>
+    <div class="blog-image">
+      <a href="Augmented Reality (AR) & Virtual Reality (VR).html"><img src="images/Augmented Reality (AR) & Virtual Reality (VR).jpeg" alt="Tech Trends 2025"></a>
+    </div>
+  </section>
+  <section id="tech-trends" class="blog-section">
+    <div class="blog-content">
+      <h2>  Big Data & Analytics</h2>
+      <p>Big Data refers to massive volumes of structured and unstructured data, while Analytics involves processing and analyzing this data to extract valuable insights for decision-making..</p>
+      
+    </div>
+    <div class="blog-image">
+      <a href="bigdata.html"><img src="images/Big Data & Analytics.jpeg" alt="Tech Trends 2025"></a>
+    </div>
+  </section>
+  <section id="tech-trends" class="blog-section">
+    <div class="blog-content">
+      <h2>  5G Technology</h2>
+      <p>5G technology is the fifth-generation wireless network that offers ultra-fast speeds, low latency, and higher connectivity for advanced applications like IoT, AI, and smart cities.</p>
+      
+    </div>
+    <div class="blog-image">
+      <a href="5G Technology.html"><img src="images/5G Technology.jpg" alt="Tech Trends 2025"></a>
+    </div>
+  </section>
+
+  <section id="tech-trends" class="blog-section">
+    <div class="blog-content">
+      <h2>  Software Development</h2>
+      <p>Software development is the process of designing, coding, testing, and maintaining applications or systems to meet user needs and business requirements.</p>
+      
+    </div>
+    <div class="blog-image">
+      <a href="sd.html"><img src="images/Software Development.jpg" alt="Tech Trends 2025"></a>
+    </div>
+  </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#terms-of-service">Terms of Service</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="copyright">
+        &copy; 2025 Blogbook. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="sidebar.js"></script><!-- Add sidebar JS -->
+  <script src="script.js"></script>
+</body>
+</html>
